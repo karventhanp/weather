@@ -1,0 +1,39 @@
+.form{
+    margin-top: 10px;
+}
+.form-control{
+    background-color: transparent;
+    border: 1px solid blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    font-weight: bold;
+}
+.form-control:hover{
+    background-color: transparent;
+}
+.form-control:focus{
+    background-color: transparent;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    font-weight: bold;
+}
+.box1,.box2{
+    border: 2px solid aqua;
+    border-radius: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    padding: 0% 2% 2% 2%;
+    background-color: rgba(9, 241, 241, 0.4);
+    
+}
+.err{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+@media (min-width:700px){
+    .box1{
+        padding-top: 0% 2% 2% 2%;
+     height: 100%;
+    }
+}
