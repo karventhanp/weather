@@ -8,7 +8,8 @@ class Home extends Component {
         err: {}
     }
     componentDidMount = () => {
-        axios.post('http://localhost:5000/getweather',{name:this.state.name})
+        let name='erode';
+        axios.get(`http://api.weatherstack.com/current?access_key=766c2aee4565c7bf6c109d7c00089edb&query=${name}`)
         .then(res=>this.setState({data:res.data}))
         .catch(err=>console.log(err));
     }
@@ -23,7 +24,7 @@ class Home extends Component {
             return;
         }
         else {
-            axios.post('http://localhost:5000/getweather', { name: name })
+            axios.post(`http://api.weatherstack.com/current?access_key=766c2aee4565c7bf6c109d7c00089edb&query=${name}`)
                 .then(res => {
                     if (res.data.success === false) {
                         this.setState({ data: [], err: { location: "Please enter valid location or give space between two words !" } });
